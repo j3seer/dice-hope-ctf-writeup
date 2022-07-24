@@ -1,10 +1,10 @@
-#DiceGang hope CTF writeup
+# DiceGang hope CTF writeup
 
 Mostly solved the web challenges with Task_Hashed
 
 ---------------------------------------------------------------------------------------------------
 
-#Reverser
+## Reverser
 
 the website is a text reverser and from the source code we can tell its an SSTI so we just have to put a regular SSTI payload but just reversed
 
@@ -25,7 +25,7 @@ supplied reversed payload:
 
 ---------------------------------------------------------------------------------------------------
 
-#Pastebin 
+## Pastebin 
 
 the important part of this challenge is :
 
@@ -47,7 +47,7 @@ with ok.php :
 ``` 
 ---------------------------------------------------------------------------------------------------
 
-#oeps
+## oeps
 
 this challenge requires to put a palindrome string to add them to the pending table
 
@@ -84,7 +84,9 @@ the final query looks like this
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-#mk
+## mk
+
+Abusing MathJax renderer for an xss by supplying the source to the mathjax file
 
 payload :
 
