@@ -1,4 +1,4 @@
-# DiceGang hope CTF writeup
+# DiceCTF @Hope writeup
 
 Mostly solved the web challenges with Task_Hashed
 
