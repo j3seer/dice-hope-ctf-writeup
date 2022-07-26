@@ -96,6 +96,8 @@ flag : hope{ecid_gnivlovni_semordnilap_fo_kniht_ton_dluoc}
 
 Abusing MathJax renderer for an xss by supplying the source to the mathjax file
 
+PS: the reason this works is because the mathjax renderer parses the script provided and executes it, otherwise if u change the src to something else that doesnt render it , it wouldn't work ( try it locally ) 
+
 payload :
 
 ```javascript
